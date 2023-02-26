@@ -8,8 +8,11 @@
         type = "image/x-icon">
     </head>
 <style>
-    body{
-        background-color: black;
+    body {
+      animation-name: backgroundColorPalette;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
     h1, h2, h3, h4, h5, h6{
         font-size: 30px;
@@ -78,6 +81,23 @@
     }
     a:hover{
         color: red;
+    }
+    @keyframes backgroundColorPalette {
+      0% {
+        background: black;
+      }
+      25% {
+        background: darkgray;
+      }
+      50% {
+        background: darkgreen;
+      }
+      75% {
+        background: darkred;
+      }
+      100% {
+        background: darkolivegreen;
+      }
     }
 </style>
 <header>
