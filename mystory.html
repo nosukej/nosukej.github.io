@@ -7,118 +7,113 @@
 "https://uploads.scratch.mit.edu/get_image/user/100009513_60x60.png" 
         type = "image/x-icon">
     </head>
+
 <style>
-    body {
-      animation-name: backgroundColorPalette;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-    }
-    h1, h2, h3, h4, h5, h6{
-        font-size: 30px;
-        color: white;
-        white-space: pre-line;
-    }
-    p{
-        font-size: 30px;
-        white-space: pre-line;
-    }
-    b{
-        font-size: 30px;
-        white-space: pre-line;
-    }
-    a{
-        color: white;
-    }
-
-    summary{
-        color: lightblue;
-        font-size: 30px;
-    }
-    title{
-        color: gray;
-    }
-    .my_information{
-        color: lightgreen;
-    }
-    .speed, .darknesslight, .thenormallife, .wonder, .thenormallife, .talkingwolfman, .stealthclub{
-        color: white
-    }
-    .topmenu{
-        color: black;
-        font-size: 30px;
-    }
-    body{
-    padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
-    }
-    header {
-        width: 100%; /* 幅いっぱいを指定 */
-        height: 50px; /* 高さを50pxに指定 */
-        background: white; /* 背景色にグレーを指定 */
-        padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
-        box-sizing: border-box; /* padding分を含んで幅を100%にするため */
-        position: fixed; /* ウィンドウを基準に画面に固定 */
-        top: 0; /* 上下の固定位置を上から0pxにする */
-        left: 0; /* 左右の固定位置を左から0pxにする */
-        display: flex; /* 中の要素を横並びにする */
-        align-items: center; /* 中の要素を上下中央に並べる */
-    }
-
-    header .gnav .menu {
-        display: flex; /* 中の要素を横並びにする */
-    }
-
-    header .gnav .menu li {
-        list-style: none; /* リストの[・]を消す */
-    }
-
-    header .gnav .menu li + li {
-        margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
-    }
-
-    main{
-        height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
-    }
-    a:hover{
-        color: red;
-    }
-    @keyframes backgroundColorPalette {
-      0% {
-        background: black;
-      }
-      25% {
-        background: darkolivegreen;
-      }
-      50% {
-        background: black;
-      }
-      75% {
-        background: darkolivegreen;
-      }
-      100% {
-        background: black;
-      }
-      125% {
-        background: darkolivegreen;
-      }
-    }
-    .cool-button1{
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 18px;
-        border-radius: 25px;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .cool-button1:hover{
-        background-color: black;
-        color: darkgray;
-        transform: translateY(-2px);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    }
+body {
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 30px;
+    color: white;
+    white-space: pre-line;
+}
+p{
+    font-size: 30px;
+    white-space: pre-line;
+}
+b{
+    font-size: 30px;
+    white-space: pre-line;
+}
+a{
+    color: white;
+}
+summary{
+    color: lightblue;
+    font-size: 30px;
+}
+title{
+    color: gray;
+}
+.my_information{
+    color: lightgreen;
+}
+.speed, .darknesslight, .thenormallife, .wonder, .thenormallife, .talkingwolfman, .stealthclub{
+    color: white
+}
+.topmenu{
+    color: black;
+    font-size: 30px;
+}
+body{
+padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    background: white; /* 背景色にグレーを指定 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+header .gnav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+main{
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+a:hover{
+    color: red;
+}
+@keyframes backgroundColorPalette {
+  0% {
+    background: black;
+  }
+  25% {
+    background: darkolivegreen;
+  }
+  50% {
+    background: black;
+  }
+  75% {
+    background: darkolivegreen;
+  }
+  100% {
+    background: black;
+  }
+  125% {
+    background: darkolivegreen;
+  }
+}
+.cool-button1{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+.cool-button1:hover{
+    background-color: black;
+    color: darkgray;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 </style>
 <header>
     <h1 class="topmenu">僕のストーリー</h1>
