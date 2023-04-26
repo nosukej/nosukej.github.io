@@ -30,5 +30,46 @@
 	<option>
 </select>
 <a href="file:///F:/%E4%BB%96(else)/HTML/itsmylife.html">It's My Life</a>
+<!-- HTML -->
+<select id="mySelect" onchange="changeContent()">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+<div id="myDiv">
+  <p>Initial content</p>
+</div>
+
+<!-- CSS -->
+<style>
+  #myDiv p {
+    display: none;
+  }
+
+  #myDiv p.active {
+    display: block;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function changeContent() {
+    const select = document.getElementById("mySelect");
+    const div = document.getElementById("myDiv");
+    const selectedOption = select.value;
+
+    // Hide all paragraphs in the div
+    const paragraphs = div.getElementsByTagName("p");
+    for (let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].classList.remove("active");
+    }
+
+    // Show the selected paragraph
+    const selectedParagraph = div.querySelector(`#${selectedOption}`);
+    selectedParagraph.classList.add("active");
+  }
+</script>
+
 </body>
 </html>
